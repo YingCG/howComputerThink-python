@@ -1,4 +1,4 @@
 # We are practicing python with curiousity
+this is a research repo while we learning Programming fundamental
 
-- this is a research repo
-- this is another branch with different research
+- Week1 - How computer think
