@@ -1,7 +1,7 @@
 # let get some user information
-age = int(input("please type your age: "))
+banana = int(input("please type your age: "))
 coolness = int(input("On the scale of 1-10, how cool are you? "))
-result = age * coolness
+result = banana * coolness
 
 # here we stringify the result and throw it into print function
 print("we expect you to live for " + str(result) + " years")

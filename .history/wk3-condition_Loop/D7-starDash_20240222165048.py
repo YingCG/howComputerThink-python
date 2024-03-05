@@ -1,7 +1,7 @@
 counter = 0
 result = ""
-
-while counter < 10:
+x = input("Enter your size of the triangle:")
+while counter < int(x):
     if counter % 2 == 1:
         result = result + "-"
     else:

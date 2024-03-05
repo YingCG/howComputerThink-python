@@ -1,6 +1,6 @@
 lineCounter = 1
 size = input("Enter the Triangle Size: ")
-while lineCounter <= int(size):
+while lineCounter <= size:
     starCounter = 0
     line = ""
     while starCounter < lineCounter:
