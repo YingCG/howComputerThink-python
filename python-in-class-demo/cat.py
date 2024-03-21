@@ -5,18 +5,18 @@ class Cat:
 
     # constructor
     def __init__(self, name, age, isHappy=True):
-        self.name = name
-        self.age = age
+        self.name = (name,)
+        self.age = (age,)
         self.__isHappy = isHappy
 
     def sound(self):
-        print("Meow")
+        print("Meow~")
 
     def display(self):
-        print("*** CAT ***")
-        print("name:", self.name)
-        print("age:", self.age)
-        print("happy:", self.__isHappy)
+        print("****CAT***")
+        print("name: ", self.name)
+        print("age: ", self.age)
+        print("happy: ", self.__isHappy)
 
     # getter
     def get_isHappy(self):
@@ -28,7 +28,7 @@ class Cat:
 
 
 # child class
-class DomesticCat(Cat):
+class DometicCat(Cat):
     owner: None
 
     def __init__(self, owner, name, age, isHappy=True):
@@ -36,8 +36,14 @@ class DomesticCat(Cat):
         self.owner = owner
 
 
-# child class
 class WildCat(Cat):
-
     def sound(self):
-        print("Hiss!")
+        print("Hiss")
+
+
+# create instance
+cat1 = Cat("Mao Mao", 3)
+print(cat1.sound())
+
+cat2 = DometicCat("Mikhir", "KitKat", 2)
+print(cat2.owner)

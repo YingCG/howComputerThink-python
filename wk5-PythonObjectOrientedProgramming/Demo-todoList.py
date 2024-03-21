@@ -18,6 +18,10 @@ class TodoList:
         return f"Our tasks: {todos}"
 
 
+# homework = TodoList(todos)
+# print(homework)
+
+
 def main():
     while True:
         homework = TodoList(todos)
