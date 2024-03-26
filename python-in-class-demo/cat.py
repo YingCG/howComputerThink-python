@@ -1,3 +1,6 @@
+from winsound import Beep
+
+
 class Cat:
     name: None
     age: None
@@ -39,6 +42,8 @@ class DometicCat(Cat):
 class WildCat(Cat):
     def sound(self):
         print("Hiss")
+        Beep(300, 1000)
+        Beep(200, 500)
 
 
 # create instance
@@ -47,3 +52,6 @@ print(cat1.sound())
 
 cat2 = DometicCat("Mikhir", "KitKat", 2)
 print(cat2.owner)
+
+cat3 = WildCat("Jam", "Noodle", 1)
+print(cat3.sound())

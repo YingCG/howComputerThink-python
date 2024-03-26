@@ -8,12 +8,12 @@ class Book:
     def getPrice(self):
         if hasattr(self, "discount"):
             # return self.price - self.discount
-            return self.price - (self.price * self.discount)
+            return self.price - (self.price * self.discount / 100)
         else:
             return self.price
 
     def setDiscount(self, percentage):
-        self.discount = percentage / 100
+        self.discount = percentage
         return self
 
     def __str__(self):
