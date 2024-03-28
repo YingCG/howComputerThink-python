@@ -8,11 +8,18 @@ class Person:
 
     def login(self):
         try:
-            if self.password is not None:
-                entered_password = input(f"{self.name}, please enter your password: ")
-                if entered_password != self.password:
-                    print("Incorrect password")
-                    return
-            print(f"Welcome, {self.name}!")
+            # initiate variable for username and password
+            admin = "Sesame"
+            secret = "secret101"
+
+            # get user input for username and password
+            username = input("Enter your name: ")
+            password = input("Enter your password: ")
+
+            # Check if entered username and password matching
+            if username == admin and password == secret:
+                print("Sesame door is opening. All the treasures are still here!")
+            else:
+                print("Nothing here...")
         except ValueError as e:
             print(f"Login failed: {e}")
